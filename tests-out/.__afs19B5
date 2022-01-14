@@ -1,0 +1,9 @@
+gcc -fno-pic -static -fno-builtin -fno-strict-aliasing -Og -Wall -MD -ggdb -m32 -Werror -fno-omit-frame-pointer -fno-stack-protector -fno-pie -no-pie   -c -o schedtest.o schedtest.c
+[01m[Kschedtest.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kschedtest.c:46:10:[m[K [01;31m[Kerror: [m[Kinvalid type argument of ‘[01m[K->[m[K’ (have ‘[01m[Kstruct pstat[m[K’)
+   46 |   if (pst[01;31m[K->[m[Kpid[i] == pidA) {
+--
+[01m[Kschedtest.c:49:17:[m[K [01;31m[Kerror: [m[Kinvalid type argument of ‘[01m[K->[m[K’ (have ‘[01m[Kstruct pstat[m[K’)
+   49 |   } else if (pst[01;31m[K->[m[Kpid[i] == pidB) {
+--
+make: *** [<builtin>: schedtest.o] Error 1

@@ -1,0 +1,6 @@
+gcc -fno-pic -static -fno-builtin -fno-strict-aliasing -Og -Wall -MD -ggdb -m32 -Werror -fno-omit-frame-pointer -fno-stack-protector -fno-pie -no-pie   -c -o schedtest.o schedtest.c
+[01m[Kschedtest.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kschedtest.c:12:7:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kpid[m[K’ [[01;31m[K-Werror=unused-variable[m[K]
+   12 |   int [01;31m[Kpid[m[K;
+--
+make: *** [<builtin>: schedtest.o] Error 1
